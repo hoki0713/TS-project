@@ -26,7 +26,31 @@ TypeScript is a 'Tool' that helps developers write better code.
 - number : 1, 5.3, -10... All numbers, no differentiation between integers or floats
 - string : 'Hi', "Hi", `Hi`... All text values
 - boolean : true, false... Just these two. no "truthy" or "falsy" values
-- 
+- object: {age: 30}... Any JavaScript object, more specific types(type of object) are possible 
+  object types can be created for nested objects.
+  ex)
+  const product = {
+    id: 'abc',
+    price: 12.99,
+    tags: ['greate-offer', 'hot-and-new'],
+    details: {
+      title: 'Red Carpet',
+      description: 'A greate carpet - almost brand-new!'
+    }
+  }
+  
+  ------
+  type of object
+  {
+    id: string;
+    price: number;
+    tags: string[];
+    details: {
+      title: string;
+      description: string;
+    }
+  }
+
 
 
 ** JavaScript VS TypeScript **
