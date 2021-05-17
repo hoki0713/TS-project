@@ -53,7 +53,7 @@ TypeScript is a 'Tool' that helps developers write better code.
 
 
 - Array: [1,2,3]... Any JavaScript array, type can be flexible or strict (regarding the element types) 
-
+- Tuple: [1,2]... Added by TypeScript: Fixed-length-array
 
 
 ** JavaScript VS TypeScript **
