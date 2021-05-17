@@ -52,6 +52,9 @@ TypeScript is a 'Tool' that helps developers write better code.
   }
 
 
+- Array: [1,2,3]... Any JavaScript array, type can be flexible or strict (regarding the element types) 
+
+
 
 ** JavaScript VS TypeScript **
 - The key difference is: JavaScript uses "dynamic types" (resolved at runtime). TypeScript uses "static types" (set during development).
