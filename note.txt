@@ -87,6 +87,23 @@ function combine(
 the third parameter will take only two type of string such as 'as-number' or 'as-text'.
 
 
+< Type Aliases >
+Type aliases can be used to 'create' my own types.
+not limited to string union types though..
+I can also provide an alias to a object type.
+
+ex1)
+
+type User = { name: string; age: number };
+const u1: User = { name: 'Hoki', age: 27 };
+
+ex2)
+
+function greet(user: User) {
+  console.log('Hi, I'm' + user.name);
+}
+
+
 
 
 
