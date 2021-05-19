@@ -104,7 +104,20 @@ function greet(user: User) {
 }
 
 
+< Return Type >
 
+- void: if function return nothing, then it's void type.
+ 
+  ex)
+  function resultLog(num: number): void {
+    console.log('result: ' + num);
+  }
+
+** undefined : function don't use undefined return type. theoretically it's possible.. like this..
+
+function someFu(): undefined { return; } << it works
+let someValue: undefind; << it works
+function someFu(): undefind {} << it doesn't work
 
 
 
