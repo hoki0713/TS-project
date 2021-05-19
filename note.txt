@@ -135,6 +135,20 @@ want to specify a function that takes 2 number parameters and return number.
 
 let someFunction: (a: number, b: number) => number; 
 
+-----
+
+< Callback Type >
+
+function addAndHandle(n1: number, n2: number, cb: (num: number) => void) {
+  const result = n1 + n2;
+  cb(result);
+}
+
+addAndHandle(10, 20, (result) => {console.log(result)})
+
+if Callback function's return type is void, we can return something but void type will ignore the return value.
+
+and when we specify callback function's type, we can decide how many and what types of parameters the function will take. So, the addAndHandle function's callback function takes only one number parameter but if we send any other types or more than one parameter, it will show it's error.
 
 
 ** JavaScript VS TypeScript **
