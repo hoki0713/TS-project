@@ -69,6 +69,27 @@ input1 = 'one'
 both will work.
  
 
+< Literal Type >
+
+Some specific string such as 'as-number' or 'as-text' etc..
+we can assign the types like..
+
+resultConversion: 'as-number' | 'as-text'
+
+so.. in the function's parameter...
+
+function combine(
+    input1: number | string,
+    input2: number | string,
+    resultConversion: 'as-text' | 'as-number'
+    ) { ... }
+
+the third parameter will take only two type of string such as 'as-number' or 'as-text'.
+
+
+
+
+
 
 
 ** JavaScript VS TypeScript **
