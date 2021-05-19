@@ -119,6 +119,21 @@ function someFu(): undefined { return; } << it works
 let someValue: undefind; << it works
 function someFu(): undefind {} << it doesn't work
 
+< Function Type >
+
+TypeScript has Function type.
+but type Function can be any function regardless parameter or return type.
+
+ex)
+let anyFunction: Function; << variable anyFunction can be literally any function.
+
+But,
+if I want to specify a function as type. then use arrow function.
+
+ex)
+want to specify a function that takes 2 number parameters and return number.
+
+let someFunction: (a: number, b: number) => number; 
 
 
 
