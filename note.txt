@@ -151,6 +151,34 @@ if Callback function's return type is void, we can return something but void typ
 and when we specify callback function's type, we can decide how many and what types of parameters the function will take. So, the addAndHandle function's callback function takes only one number parameter but if we send any other types or more than one parameter, it will show it's error.
 
 
+< Unknown Type >
+
+Unknown type is maybe similar with Any type but it's different.
+For example...
+
+let userInput: unknown;
+let userName: string;
+
+userName = userInput; << that makes error.
+
+unknown type is not guarantee to be a string.
+but any type can be literally any types so it doesn't make error.
+unknown is more restrictive than any.
+
+if I use unknown type then I need to do another type check.
+for example..
+
+if (typeof userInput === 'string') {
+  userName = userInput;
+}
+
+this code will not make error.
+unknown is better choice than any. (but union type is better than unknown)
+
+
+
+
+
 ** JavaScript VS TypeScript **
 - The key difference is: JavaScript uses "dynamic types" (resolved at runtime). TypeScript uses "static types" (set during development).
 
