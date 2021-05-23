@@ -189,3 +189,42 @@ if I use never type for function's return type, then I can be very clear that th
 [Tip!]
 - The core primitive types in TypeScript are all lowercase!
 string(o) String(x) number(o) Number(x)
+
+
+
+------------------------------------------------------------------
+
+
+Module 2
+
+
+1. Watch mode
+tsc app.ts -w or tsc app.ts --watch
+-> automatically compile the app.ts to app.js.
+but I can use only one .ts file.
+
+2. Multiple ts files 
+tsc --init
+-> It will make tsconfig.json file. That means this project will be TypeScript project. After making tsconfig.json file, if I enter just 'tsc' not pointing some specific ts file, then all .ts files in the folder will compile to .js file.
+
+3. Including & Excluding Files
+"tsconfig.json" file is crucial file for managing the project. This file tells TypeScript how it should compile.
+
+- "exclude": [ 
+  "analytics.ts",
+  "analytics.dev.ts", 
+  "*.dev.ts", 
+  "**/*.dev.ts", 
+  "node_modules"   => would be the default.
+] => I can put some specific ts files that I will not compile.
+
+- "include": [
+  "app.ts"
+]
+
+4. useful tsconfig.json options
+- sourceMap : in the browser inspect, I can see the source files but if I compile the ts files to js file, it's not what I directly write so probably hard to read. But if I set the sourceMap to true then I can see ts files in the inspect so it makes me easier to debug.
+
+
+
+
