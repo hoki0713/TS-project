@@ -226,5 +226,17 @@ tsc --init
 - sourceMap : in the browser inspect, I can see the source files but if I compile the ts files to js file, it's not what I directly write so probably hard to read. But if I set the sourceMap to true then I can see ts files in the inspect so it makes me easier to debug.
 
 
+---------
+
+SECTION 5 - Classes & Interfaces
+
+Objects => The things you work with in code.
+	=> Instances of classes (= based on classes)
+	=> Class-based creation is an alternative to using obejct literals
+
+Classes => Blueprints for objects(theoretical definition)
+	=> Define how objects look like, which properties and methods they have.
+	=> Classes make creation of multiple, similar objects much easier.
+ 
 
 
